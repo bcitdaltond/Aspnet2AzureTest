@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace Lab3._1
+namespace Lab3
 {
     public class FilterConfig
     {

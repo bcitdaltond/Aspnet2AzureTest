@@ -6,9 +6,9 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using Lab3._1.Models;
+using Lab3.Models;
 
-namespace Lab3._1.Controllers
+namespace Lab3.Controllers
 {
     [Authorize]
     public class ManageController : Controller

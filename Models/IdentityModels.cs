@@ -3,8 +3,9 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using Lab3.Models.Country;
 
-namespace Lab3._1.Models
+namespace Lab3.Models
 {
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit http://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
@@ -29,5 +30,8 @@ namespace Lab3._1.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<City> Cities { get; set; }
+        public DbSet<Province> Provinces { get; set; }
     }
 }
